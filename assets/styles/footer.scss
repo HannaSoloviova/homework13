@@ -1,0 +1,109 @@
+.footer {
+	margin: 50px 80px;
+}
+
+.footer-form {
+	padding: 85px 50px;
+	box-sizing: border-box;
+	background-color: $formBackgroundColor;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 98px;
+}
+
+.footer-title {
+	margin: 0;
+	@include titleStyle(30px, #ffffff);
+}
+
+.footer-button {
+	padding: 20px 30px;
+	margin-top: 29px;
+	border: 2px solid $buttonBackgroundColor;
+	box-sizing: border-box;
+	background-color: $buttonBackgroundColor;
+	color: $buttonColor;
+	text-transform: $titleTextTransform;
+}
+
+.form-column:last-child {
+	padding: 20px;
+	background-color: $buttonBackgroundColor;
+}
+
+.form-title {
+	margin-top: 0;
+	margin-bottom: 18px;
+	margin-right: 35%;
+	@include titleStyle(24px, #60606e);
+}
+
+.form-description {
+	margin: 0;
+	@include paragraphStyle(16px, #999999);
+}
+
+.form {
+	margin-top: 29px;
+	font-size: 0;
+}
+
+.input {
+	width: 70%;
+	padding: 20px;
+	border: 1px solid $buttonBackgroundColorMain;
+	box-sizing: border-box;
+	background-color: $buttonBackgroundColor;
+	@include paragraphStyle(12px, #cdcdcd);
+}
+
+.form-button {
+	padding: 20px 50px;
+	border: 1px solid $buttonBackgroundColorMain;
+	box-sizing: border-box;
+	background-color: $buttonBackgroundColorMain;
+	text-transform: $titleTextTransform;
+	@include paragraphStyle(12px, $buttonColorMain);
+}
+
+.navigation {
+	padding: 0;
+	margin: 0;
+	
+	&-list {
+		display: inline;
+		list-style: none;
+	}
+	&-list-item {
+		text-decoration: none;
+	}
+}
+
+.page-navigation:not(:last-child)::after {
+	content: '-';
+	margin: 0 10px;
+	color: $footerColor;
+} 
+
+.footer-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.footer-text {
+	color: $footerColor;
+	font-size: $footerFontSize;
+	text-transform: $titleTextTransform;
+}
+
+.social-media-nav {
+	margin-top: 29px;
+	filter: invert(40%);
+	display: flex;
+	justify-content: flex-end;
+}
+
+.social-media-list:not(:last-child) {
+	margin-right: 10px;
+}

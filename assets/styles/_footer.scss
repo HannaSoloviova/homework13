@@ -1,0 +1,121 @@
+.footer {
+	margin: 50px 80px;
+}
+
+.footer-form {
+	padding: 50px 85px;
+	box-sizing: border-box;
+	background-color: $formBackgroundColor;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 98px;
+}
+
+.footer-title {
+	margin: 0;
+	@include titleStyle($titleFontSizeMain, $buttonColorMain);
+}
+
+.footer-button {
+	padding: 20px 30px;
+	margin-top: 29px;
+	border: 2px solid $buttonBackgroundColor;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	background-color: $buttonBackgroundColor;
+	color: $buttonColor;
+	text-transform: $titleTextTransform;
+}
+
+.form-column:last-child {
+	padding: 20px;
+	background-color: $buttonBackgroundColor;
+}
+
+.form-title {
+	margin-top: 0;
+	margin-bottom: 18px;
+	margin-right: 35%;
+	@include titleStyle(24px, $titleColorMain);
+}
+
+.form-description {
+	margin: 0;
+	@include paragraphStyle(16px, $listColor);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.form {
+	margin-top: 29px;
+	font-size: 0;
+}
+
+.input {
+	width: 70%;
+	padding: 20px;
+	border: 1px solid $buttonBackgroundColorMain;
+	box-sizing: border-box;
+	background-color: $buttonBackgroundColor;
+	@include paragraphStyle($footerFontSize, #cdcdcd);
+}
+
+.form-button {
+	padding: 20px 50px;
+	border: 1px solid $buttonBackgroundColorMain;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	background-color: $buttonBackgroundColorMain;
+	text-transform: $titleTextTransform;
+	@include paragraphStyle($footerFontSize, $buttonColorMain);
+}
+
+.navigation {
+	padding: 0;
+	margin: 0;
+	
+	&-list {
+		display: inline;
+		list-style: none;
+	}
+
+	&-list-item {
+		text-decoration: none;
+	}
+}
+
+.page-navigation:not(:last-child)::after {
+	content: '-';
+	margin: 0 10px;
+	color: $footerColor;
+} 
+
+.footer-wrapper {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.footer-text {
+	color: $footerColor;
+	font-size: $footerFontSize;
+	text-transform: $titleTextTransform;
+}
+
+.social-media-nav {
+	margin-top: 29px;
+	filter: invert(40%);
+	display: flex;
+	justify-content: flex-end;
+}
+
+.social-media-list:not(:last-child) {
+	margin-right: 10px;
+}

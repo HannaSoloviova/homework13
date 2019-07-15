@@ -1,0 +1,28 @@
+$titleFontSizeMain: 30px;
+$titleFontSize: 16px;
+$titleTextTransform: uppercase;
+$paragraphFontSizeMain: 16px;
+$textFontSize: 14px;
+$footerFontSize: 14px;
+$titleColorMain: #60606e;
+$paragraphColorMain: #60606e;
+$listColor: #999999;
+$buttonColorMain: white;
+$buttonColor: #7beec7;
+$asideBackgroundColor: #efeff0;
+$buttonBackgroundColor: white;
+$buttonBackgroundColorMain: #7beec7;
+$pseudoBackgroundColor: #7beec7;
+$formBackgroundColor: #7beec7;
+$footerColor: #9a9a9a;
+
+
+@mixin titleStyle($size, $color) {
+	font-size: $size;
+	color: $color;
+}
+
+@mixin paragraphStyle($size, $color) {
+	font-size: $size;
+	color: $color;
+}

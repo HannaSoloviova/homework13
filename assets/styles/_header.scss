@@ -1,0 +1,50 @@
+.header {
+	padding: 50px 80px;
+	box-sizing: border-box;
+	height: 500px;
+	background: url(../images/page2/bg-image.png) no-repeat;
+	background-size: cover;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	position: relative;
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	text-transform: $titleTextTransform;
+	@include titleStyle(18px, $titleColorMain);
+}
+
+.header-menu {
+	border: none;
+	background: transparent;
+}
+
+.page-headline {
+	text-align: center;
+	text-transform: $titleTextTransform;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header-title {
+	margin: 28px 0;
+	color: $titleColorMain;
+	font-size: $titleFontSize * 3;
+}
+
+.header-navigation-item {
+	color: $paragraphColorMain;
+	font-size: $textFontSize;
+}
+
+.header-navigation:not(:last-child)::after {
+	content: '/';
+	margin: 0 10px;
+}
